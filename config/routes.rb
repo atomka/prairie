@@ -1,6 +1,6 @@
 Prairie::Application.routes.draw do
 
-  root :to => 'users#index'
+  root :to => 'pages#welcome'
 
   match "welcome" => "pages#welcome"
   get "login", :to => "sessions#new", as: "login"
